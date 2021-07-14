@@ -114,12 +114,11 @@
 
   <body id="top">
     <header id="header">
-      <h1 class="h-tit mx-4 mt-0 my-3">
-        青山でバーチャルオフィスを提供する「HarborS 表参道」 |
-        青山でバーチャルオフィスを借りるなら
-      </h1>
-      <div class="header-container d-flex justify-content-between ja mx-3">
+      <div class="header-container d-flex justify-content-between ja">
         <div class="header-left">
+          <h1 class="h-tit mt-0 my-3">
+            青山でバーチャルオフィスを提供する「HarborS 表参道」 |<br class="d-lg-none"> 青山でバーチャルオフィスを借りるなら
+          </h1>
           <a href="/" class="d-inline-block">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="109.931" height="53" viewBox="0 0 109.931 53" class="header-logo">
               <g id="レイヤー_1" data-name="レイヤー 1">
@@ -134,7 +133,32 @@
               </g>
             </svg>
           </a>
-          <span>ハーバーズ<br class="d-none d-md-block d-lg-none">表参道</span>
+          <span class="heading">ハーバーズ<br class="d-none d-md-block d-lg-none">表参道</span>
+          <!-- パンくずリスト -->
+          <div class="breadcrumb d-none d-md-block bg-transparent px-0">
+            <ol
+              itemscope
+              itemtype="https://schema.org/BreadcrumbList"
+              class="px-0 mb-0"
+            >
+              <li
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+                class="breadcrumb-last"
+              >
+                <a
+                  href="/virtual_office/"
+                  itemprop="item"
+                  class="d-inline-block mb-0 disabled"
+                  tabindex="-1"
+                >
+                  <span itemprop="name mx-0">バーチャルオフィスTOP</span>
+                </a>
+                <meta itemprop="position" content="1">
+              </li>
+            </ol>
+          </div>
         </div>
         <div class="header-right">
           <div class="nav-toggle">
@@ -310,31 +334,6 @@
             </ul>
           </nav>
         </div>
-      </div>
-      <!-- パンくずリスト -->
-      <div class="breadcrumb d-none d-md-block bg-transparent px-3">
-        <ol
-          itemscope
-          itemtype="https://schema.org/BreadcrumbList"
-          class="px-2 mb-0"
-        >
-          <li
-            itemprop="itemListElement"
-            itemscope
-            itemtype="https://schema.org/ListItem"
-            class="breadcrumb-last"
-          >
-            <a
-              href="/virtual_office/"
-              itemprop="item"
-              class="d-inline-block mb-0 disabled"
-              tabindex="-1"
-            >
-              <span itemprop="name">バーチャルオフィスTOP</span>
-            </a>
-            <meta itemprop="position" content="1">
-          </li>
-        </ol>
       </div>
     </header>
 

@@ -18,7 +18,7 @@ a {
 /* header */
 #header {
   width: 100vw;
-  height: 155px;
+  height: 157px;
   position: fixed;
   z-index: 100;
   color: #fff;
@@ -29,8 +29,7 @@ a {
 
 #header.white-bg {
   background-color: #FFF;
-  height: 155px;
-  padding-bottom: 30px;
+  height: 157px;
 }
 
 #header.white-bg .header-logo path {
@@ -88,11 +87,17 @@ a {
   transform: translateY(-180px);
 }
 
-.header-left span {
+.header-left .heading {
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
   margin-left: 26px;
+  vertical-align: middle;
+}
+
+.header-left span {
+  display: inline-block;
+  font-size: 12px;
   vertical-align: middle;
 }
 
@@ -237,7 +242,7 @@ a {
 }
 
 @media screen and (max-width: 850px) {
-  .header-left span {
+  .header-left .heading {
     margin-left: 8px;
   }
 
@@ -248,19 +253,19 @@ a {
 
 @media screen and (max-width: 767.8px) {
   #header {
-    /* padding-top: 20px; */
+    height: 120px;
   }
-  
+
   #header.white-bg {
-    padding: 0 0 10px;
-    height: 130px;
+    padding: 0;
+    height: 120px;
   }
 
   #header.white-bg .nav-menu a {
     color: #FFF;
   }
 
-  .header-left span {
+  .header-left .heading {
     margin-left: 16px;
   }
 
@@ -462,3 +467,7 @@ a {
 }
 /* header */
 
+.transparent-area {
+  position: absolute;
+  opacity: 0;
+}
