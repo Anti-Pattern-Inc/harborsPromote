@@ -35,9 +35,7 @@ $(function () {
 
   function closeSpeechBubble() {
     $('.header-disabled').removeClass('hovered');
-    // $('.footer-disabled').removeClass('hovered');
     $('.speech-bubble').removeClass('hovered');
-    // $('.footer-speech-bubble').removeClass('hovered');
   }
       
   // ハンバーガー

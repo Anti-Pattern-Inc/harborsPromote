@@ -5,7 +5,6 @@ a {
 
 .header-container {
   max-width: 1200px;
-  height: 62px;
   padding: 0 10px;
   margin: 0 auto;
   position: relative;
@@ -18,18 +17,18 @@ a {
 /* header */
 #header {
   width: 100vw;
-  height: 157px;
+  height: 140px;
   position: fixed;
   z-index: 100;
   color: #fff;
-  padding-top: 10px;
   transition: .5s;
   box-shadow: none;
 }
 
 #header.white-bg {
   background-color: #FFF;
-  height: 157px;
+  height: 140px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 #header.white-bg .header-logo path {
@@ -95,14 +94,10 @@ a {
   vertical-align: middle;
 }
 
-.header-left span {
+#header span {
   display: inline-block;
   font-size: 12px;
   vertical-align: middle;
-}
-
-.nav-menu {
-  height: 62px;
 }
 
 .nav-menu ul {
@@ -145,10 +140,10 @@ a {
 }
 
 .speech-bubble {
-  display: none;
+  display: block;
   opacity: 0;
   position: absolute;
-  top: 112px;
+  top: 132px;
   right: 10px;
   padding: 32px;
   background-color: #FFF;
@@ -253,12 +248,13 @@ a {
 
 @media screen and (max-width: 767.8px) {
   #header {
-    height: 120px;
+    height: 130px;
+    z-index: 9999;
   }
 
   #header.white-bg {
     padding: 0;
-    height: 120px;
+    height: 130px;
   }
 
   #header.white-bg .nav-menu a {
@@ -269,6 +265,7 @@ a {
     margin-left: 16px;
   }
 
+  
   .nav-menu {
     display: none;
     height: 100%;
@@ -282,7 +279,7 @@ a {
     display: flex;
     flex-direction: column;
   }
-
+  
   .nav-menu .link-icon g {
     fill: #000;
     stroke: #FFF;
@@ -300,7 +297,7 @@ a {
     height: 50px;
     border-radius: 50%;
     background: #FFF;
-    z-index: 10;
+    z-index: 10000;
   }
 
   .nav-toggle span {
