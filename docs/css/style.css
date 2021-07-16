@@ -2003,3 +2003,47 @@ form span.bg-danger {
   background-color: #FA817D !important;
 }
 /* END */
+
+
+.contact-main {
+  background-image: url(../img/contacts1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.contact-main::before{
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  z-index: 10;
+}
+
+.contact-main h1, .contact-main p {
+  position: relative;
+  color: #fff;
+  z-index: 20;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 20;
+}
+
+.contact-form .submit-button {
+  margin-top: 10px;
+  background-color: #18325F;
+  color: #fff;
+  border: 3px #18325F solid;
+}
+
+.contact-form .submit-button:hover {
+  background-color: #fff;
+  color: #18325F;
+  transition: background 0.4s;
+}
